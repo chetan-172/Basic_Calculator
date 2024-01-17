@@ -57,6 +57,12 @@ class Calculator{
     {
         return(p1/p2);
     }
+    
+    float square(float p1)
+    {
+        return(p1*p1);
+    }
+
 
      public static void main(String[] args)
      {
@@ -78,5 +84,8 @@ class Calculator{
 
         float div=cal.division(p1,p2);
         System.out.println("result:"+div);
+
+        float sq=cal.square(p1,);
+        System.out.println("result:"+sq);
      }
 }
