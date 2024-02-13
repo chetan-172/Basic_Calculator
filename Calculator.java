@@ -6,7 +6,7 @@
  * The calculator class performs basic arithmetic operations such as addition, subtraction,
  * multiplication, and division.
  */
-class Calculator{
+class Calculator extends Calc{
 /**
  * The function "addition" takes two float parameters and returns their sum.
  * 
