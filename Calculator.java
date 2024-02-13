@@ -1,91 +1,104 @@
-/**
- * The calculator class performs basic arithmetic operations such as addition, subtraction,
- * multiplication, and division.
- */
-/**
- * The calculator class performs basic arithmetic operations such as addition, subtraction,
- * multiplication, and division.
- */
+
 class Calculator extends Calc{
-/**
- * The function "addition" takes two float parameters and returns their sum.
- * 
- * @param p1 The first parameter is p1, which is a float data type.
- * @param p2 The parameter p2 is a float data type.
- * @return The sum of p1 and p2.
- */
-    float addition(float p1,float p2)
-    {
-        return(p1+p2);
+    /**
+     * The function "addition" takes two float numbers as input and returns their sum.
+     * 
+     * @param num1 A float variable representing the first number to be added.
+     * @param num2 The parameter "num2" is a float type variable that represents the second number to
+     * be added in the addition function.
+     * @return The sum of num1 and num2.
+     */
+    float addition (float num1,float num2){
+        return(num1+num2);
     }
     /**
-     * The function "substraction" takes two float parameters and returns their difference.
+     * The above function performs subtraction of two floating-point numbers.
      * 
-     * @param p1 The first parameter, p1, is a float value representing the first number in the
-     * subtraction operation.
-     * @param p2 The parameter p2 is a float value that represents the second number to be subtracted
-     * from the first number.
-     * @return the result of subtracting p2 from p1.
+     * @param num1 The first number to be subtracted.
+     * @param num2 The second number to be subtracted from the first number.
+     * @return the sum of num1 and num2.
      */
-     float substraction(float p1,float p2)
-    {
-        return(p1-p2);
-    }
-    /**
-     * The function takes two float numbers as parameters and returns their multiplication.
-     * 
-     * @param p1 The first parameter is p1, which is a float data type.
-     * @param p2 The parameter p2 is a float data type.
-     * @return the product of the two input parameters, p1 and p2.
-     */
-     
-     
-     float multiplication(float p1,float p2)
-    {
-        return(p1*p2);
-    }
-    /**
-     * The function division takes two float parameters and returns their division.
-     * 
-     * @param p1 The first parameter, p1, is a float value representing the numerator of the division
-     * operation.
-     * @param p2 The parameter p2 is the divisor in the division operation. It is the number that
-     * divides the dividend (p1) to obtain the quotient.
-     * @return the result of dividing p1 by p2.
-     */
-     float division(float p1,float p2)
-    {
-        return(p1/p2);
-    }
     
-    float square(float p1)
-    {
-        return(p1*p1);
+    float substraction (float num1,float num2){
+        return(num1-num2);
+    }
+  /**
+   * The function takes two float numbers as input and returns their sum.
+   * 
+   * @param num1 The first number to be multiplied. It is of type float.
+   * @param num2 The second floating-point number to be multiplied.
+   * @return The sum of num1 and num2 is being returned.
+   */
+    float multiplication (float num1,float num2){
+        return(num1*num2);
+    }
+
+   /**
+    * The function "division" takes two float numbers as input and returns their division.
+    * 
+    * @param num1 A floating-point number representing the numerator of the division operation.
+    * @param num2 The second number to be divided.
+    * @return the result of dividing `num1` by `num2`.
+    */
+    float division(float num1,float num2){
+        return(num1/num2);
     }
 
 
-     public static void main(String[] args)
-     {
-        // The code is creating an instance of the `calculator` class called `cal`. It then assigns the
-        // values 20 and 30 to the variables `p1` and `p2` respectively.
-        Calculator cal=new Calculator();
 
-        float p1=20;
-        float p2=30;
 
-        float add=cal.addition(p1,p2);
-        System.out.println("result:"+add);
+// The code is defining a `main` method which serves as the entry point for the Java program.
+public static void main(String []args){
+    Calculator calc=new Calculator();
 
-        float sub=cal.substraction(p1,p2);
-        System.out.println("result:"+sub);
 
-        float mul=cal.multiplication(p1,p2);
-        System.out.println("result:"+mul);
+    
+    float num1=10;
+    
+    float num2=20;
+    
+        float add=calc.addition(num1,num2);
+        System.out.println("Addition of two Numbers:"+add);
+     
 
-        float div=cal.division(p1,p2);
-        System.out.println("result:"+div);
+       
+        float sub=calc.substraction(num1,num2);
+        System.out.println("Substraction :"+sub);
+     
 
-        float sq=cal.square(p1,);
-        System.out.println("result:"+sq);
-     }
+        
+        float mul=calc.multiplication(num1,num2);
+        System.out.println("Multiplication:"+mul);
+        
+
+        
+        float div=calc.division(num1,num2);
+        System.out.println("Division:"+div);
+      
+
+        
+        float sqr=calc.square(num1);
+        System.out.println("Square of Num="+sqr);
+        
+
+       
+        float cub=calc.cube(num1);
+        System.out.println("Cube of Num="+cub);
+        
+
+        
+        float modu=calc.mod(num1,num2);
+        System.out.println("Modulus of two Numbers="+modu);
+       
+
+        
+    }
+  
+
+
+
+
+
+
+}
 }
